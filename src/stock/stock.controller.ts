@@ -7,11 +7,13 @@ import {
   HttpStatus,
   HttpException,
 } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { HTTPResponse } from 'src/common/http/response';
 import { Result } from 'src/common/result/result';
 import { StockService } from './stock.service';
 
 @UseInterceptors(CacheInterceptor)
+@ApiTags('stock')
 @Controller('stock')
 export class StockController {
   constructor(private readonly stockService: StockService) {}
