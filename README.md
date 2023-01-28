@@ -46,7 +46,7 @@ $ yarn start:prod
 ```
 
 
-[swagger](http://localhost:3000/api)
+open API: [swagger](http://localhost:3000/api)
 
 
 ## License
