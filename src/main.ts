@@ -7,10 +7,9 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(
     app,
     new DocumentBuilder()
-      .setTitle('vms-api')
-      .setDescription('Visitor management project api with nest.')
+      .setTitle('stock-and-crypto price')
+      .setDescription('stock and crypto price api with nest.')
       .setVersion('0.0.1')
-      .addBearerAuth()
       .build(),
   );
   SwaggerModule.setup('api', app, document);
