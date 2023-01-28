@@ -46,4 +46,30 @@ export class CryptoService {
       );
     }
   }
+
+  async getCryptoList(query: string): Promise<ErrorMessage | Result<any>> {
+    try {
+      const result = await this.httpService.request({
+        headers: {
+          accept: 'application/json',
+          'Accept-Encoding': 'gzip,deflate,compress',
+        },
+        method: 'get',
+        url: 'https://api.coingecko.com/api/v3/search',
+        params: { query: query },
+      });
+      const listResult = await (await lastValueFrom(result)).data?.coins;
+
+      if (!listResult) {
+        return new ErrorMessage(HttpStatus.BAD_REQUEST, 'symbol not found');
+      }
+
+      return new Result(listResult);
+    } catch (error) {
+      return new ErrorMessage(
+        HttpStatus.BAD_REQUEST,
+        error?.response?.data?.error,
+      );
+    }
+  }
 }
