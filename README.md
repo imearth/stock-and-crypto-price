@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Stock & Crypto price request project build with [Nest](https://github.com/nestjs/nest).
 
 ## Installation
 
