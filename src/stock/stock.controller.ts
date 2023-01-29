@@ -90,7 +90,7 @@ export class StockController {
     name: 'query',
     required: false,
     type: 'string',
-    description: 'query string for search.',
+    description: 'query string for search stock list.',
   })
   @ApiResponse({
     status: 200,

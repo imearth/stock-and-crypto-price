@@ -65,7 +65,7 @@ export class CryptoController {
     name: 'query',
     required: false,
     type: 'string',
-    description: 'query string for search.',
+    description: 'query string for search crypto list.',
   })
   @ApiResponse({
     status: 200,
