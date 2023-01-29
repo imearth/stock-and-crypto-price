@@ -1,121 +1,100 @@
 {
-	"info": {
-		"_postman_id": "032615ee-641c-4df4-8ec8-9b346039fdda",
-		"name": "stock-price",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "21919676"
-	},
-	"item": [
-		{
-			"name": "get stock price",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/stock/price",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"stock",
-						"price"
-					],
-					"query": [
-						{
-							"key": "companyName",
-							"value": "Apple",
-							"description": "get current price by seach company name",
-							"disabled": true
-						},
-						{
-							"key": "symbols",
-							"value": "AAPL",
-							"description": "a symbol to get current price in usd.",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "search stock list",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/stock/search?query=Apple",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"stock",
-						"search"
-					],
-					"query": [
-						{
-							"key": "query",
-							"value": "Apple",
-							"description": "query string for search"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get crypto price",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/crypto/price?symbols=eth",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"crypto",
-						"price"
-					],
-					"query": [
-						{
-							"key": "symbols",
-							"value": "eth",
-							"description": "a symbol to get current price in usd."
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "search crypto list",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/crypto/search?query=sol",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"crypto",
-						"search"
-					],
-					"query": [
-						{
-							"key": "query",
-							"value": "sol",
-							"description": "query string for search"
-						}
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "032615ee-641c-4df4-8ec8-9b346039fdda",
+    "name": "stock-price",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21919676"
+  },
+  "item": [
+    {
+      "name": "get stock price",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/stock/price",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["stock", "price"],
+          "query": [
+            {
+              "key": "companyName",
+              "value": "Apple",
+              "description": "get current price by seach company name",
+              "disabled": true
+            },
+            {
+              "key": "symbols",
+              "value": "AAPL",
+              "description": "a symbol to get current price in usd."
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "search stock list",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/stock/search?query=Apple",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["stock", "search"],
+          "query": [
+            {
+              "key": "query",
+              "value": "Apple",
+              "description": "query string for search"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get crypto price",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/crypto/price?symbols=eth",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["crypto", "price"],
+          "query": [
+            {
+              "key": "symbols",
+              "value": "eth",
+              "description": "a symbol to get current price in usd."
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "search crypto list",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/crypto/search?query=sol",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["crypto", "search"],
+          "query": [
+            {
+              "key": "query",
+              "value": "sol",
+              "description": "query string for search"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
 }
