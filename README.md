@@ -29,7 +29,7 @@ Stock & Crypto price request project build with [Nest](https://github.com/nestjs
 ## Installation
 
 ```bash
-$ yarn
+$ yarn install
 ```
 
 ## Running the app
