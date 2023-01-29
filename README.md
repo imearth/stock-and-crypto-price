@@ -45,6 +45,16 @@ $ yarn start:dev
 $ yarn start:prod
 ```
 
+## Docker
+
+### build
+```bash
+docker build -t stockandcryptoprice .
+```
+### start
+```bash
+docker run -d --name stockandcryptoprice  -p 3000:3000 stockandcryptoprice
+```
 
 ## Open API 
 [swagger](http://localhost:3000/api)
