@@ -12,7 +12,10 @@ export class StockService {
       }
 
       const quoteResult = result.map((data) => {
-        return { currentPrice: data?.regularMarketPrice, symbol: data?.symbol };
+        return {
+          currentPrice: data?.regularMarketPrice || null,
+          symbol: data?.symbol,
+        };
       });
       return new Result(quoteResult);
     } catch (error) {

@@ -19,7 +19,7 @@ export class StockController {
   constructor(private readonly stockService: StockService) {}
 
   @ApiQuery({
-    name: 'symbol',
+    name: 'symbols',
     required: false,
     type: 'string',
     description: 'a symbol to get current price in usd.',
